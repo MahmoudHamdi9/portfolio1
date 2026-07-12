@@ -31,6 +31,10 @@ window.SITE_CONFIG = {
     // 2–3 sentence value proposition, shown as the hero's supporting paragraph.
     valueProposition: "End-to-end analytics from raw data to executive decisions — building SQL Server databases, Power BI dashboards, and Python ETL pipelines that hold up under real business questions.",
     location: "Egypt",
+    // Path to your profile photo. Replace the file in assets/images/
+    // and keep this filename, or change the filename here to match.
+    profileImage: "assets/images/profile.jpg",
+    cvUrl: "assets/cv/Mahmoud_Hamdi_CV.pdf",
   },
 
   // --------------------------------------------------------------------
@@ -61,9 +65,9 @@ window.SITE_CONFIG = {
   //    (edit the label/value pairs, keep the same structure)
   // --------------------------------------------------------------------
   heroStats: [
-    { value: "4", label: "end-to-end BI projects shipped" },
+    { value: "3", label: "end-to-end BI projects shipped" },
     { value: "60+", label: "DAX measures authored" },
-    { value: "$3.75B", label: "revenue analyzed across dashboards" },
+    { value: "$1.54B", label: "revenue analyzed in one dashboard" },
     { value: "4,768+", label: "social posts processed" },
   ],
 
@@ -125,16 +129,6 @@ window.SITE_CONFIG = {
       outcome: "Identified a 17% YoY drop in Miami lead/referral rates rooted in extended lead-to-sale cycles, and flagged the 2024 buyer cohort as the highest-ROI retargeting segment.",
       metric: "$1.54B revenue across 2,000 units analyzed",
       githubUrl: "https://github.com/MahmoudHamdi9/Real-Estate-Performance-Analytics-2026-",
-      demoUrl: "",
-    },
-    {
-      title: "BMW Global Market Performance & Strategic Growth",
-      image: "assets/images/technical_performance_dashboard.png",
-      tools: ["Excel", "Power BI", "Advanced Charting", "Comparative Analysis", "Data Visualization"],
-      problem: "BMW's global market performance across models, regions, and fuel types lacked a unified strategic overview to identify pricing trends, market share dynamics, and performance gaps by segment.",
-      outcome: "Built a comprehensive technical performance dashboard analyzing average pricing by model, mileage trends, fuel type market share, and regional performance — uncovering key strategic insights for product and market positioning.",
-      metric: "$3.75B+ revenue mapped across 253M+ vehicles",
-      githubUrl: "https://github.com/MahmoudHamdi9/BMW-Market-Performance-Analysis",
       demoUrl: "",
     },
   ],
