@@ -35,6 +35,10 @@
     const identity = cfg.identity || {};
     document.title = `${identity.name || "Portfolio"} — ${identity.title || "Data Analyst"}`;
 
+    // Hero Profile Image (NEW)
+    const heroProfileImage = document.getElementById("heroProfileImage");
+    if (heroProfileImage) heroProfileImage.src = identity.profileImage || "assets/images/profile-placeholder.svg";
+
     const heroName = document.getElementById("heroName");
     if (heroName) heroName.innerHTML = `${identity.name || "Your Name"}<br><span>${identity.title || "Data Analyst"}</span>`;
 

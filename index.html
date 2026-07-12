@@ -35,10 +35,19 @@
 <!-- ============================== HERO =================================== -->
 <header class="hero bg-grid" id="hero">
   <div class="container hero__grid">
+    <!-- Left: Text Content + Profile Image -->
     <div>
       <p class="hero__eyebrow">SELECT * FROM analysts WHERE trust = true;</p>
-      <h1 id="heroName">Mahmoud Hamdi</h1>
-      <p class="hero__tagline" id="heroTagline">"I don't just visualize data — I engineer the pipeline that makes it trustworthy."</p>
+      
+      <!-- Profile Image + Name in Hero -->
+      <div class="hero__profile-intro">
+        <img class="hero__profile-image" id="heroProfileImage" src="" alt="Mahmoud Hamdi">
+        <div>
+          <h1 id="heroName">Mahmoud Hamdi</h1>
+          <p class="hero__tagline" id="heroTagline">"I don't just visualize data — I engineer the pipeline that makes it trustworthy."</p>
+        </div>
+      </div>
+
       <p class="hero__value" id="heroValue"></p>
       <div class="btn-row">
         <a href="#projects" class="btn btn--primary">View Projects</a>
@@ -46,12 +55,19 @@
       </div>
     </div>
 
+    <!-- Right: Dashboard Card -->
     <div class="hero__card">
       <div class="hero__card-label">
         <span><span class="hero__card-dot"></span>live_dashboard.pbix</span>
         <span id="heroLocation">Egypt</span>
       </div>
       <svg class="hero__sparkline" viewBox="0 0 300 70" preserveAspectRatio="none">
+        <defs>
+          <linearGradient id="sparklineGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" style="stop-color:#2FBF9F;stop-opacity:0.5" />
+            <stop offset="100%" style="stop-color:#5FD9B8;stop-opacity:1" />
+          </linearGradient>
+        </defs>
         <path class="line" d="M0,55 L40,45 L80,50 L120,25 L160,32 L200,12 L240,20 L300,5" />
       </svg>
       <div class="hero__stats" id="heroStats"></div>
