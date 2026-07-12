@@ -31,10 +31,6 @@ window.SITE_CONFIG = {
     // 2–3 sentence value proposition, shown as the hero's supporting paragraph.
     valueProposition: "End-to-end analytics from raw data to executive decisions — building SQL Server databases, Power BI dashboards, and Python ETL pipelines that hold up under real business questions.",
     location: "Egypt",
-    // Path to your profile photo. Replace the file in assets/images/
-    // and keep this filename, or change the filename here to match.
-    profileImage: "assets/images/profile.jpg",
-    cvUrl: "assets/cv/Mahmoud_Hamdi_CV.pdf",
   },
 
   // --------------------------------------------------------------------
