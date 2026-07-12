@@ -65,8 +65,8 @@ window.SITE_CONFIG = {
   //    (edit the label/value pairs, keep the same structure)
   // --------------------------------------------------------------------
   heroStats: [
-    { value: "3", label: "end-to-end BI projects shipped" },
-    { value: "60+", label: "DAX measures authored" },
+    { value: "4", label: "end-to-end BI projects shipped" },
+    { value: "80+", label: "DAX measures authored" },
     { value: "$1.54B", label: "revenue analyzed in one dashboard" },
     { value: "4,768+", label: "social posts processed" },
   ],
