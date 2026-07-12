@@ -1,392 +1,801 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
 
-<title>Mahmoud Hamdi — Data Analyst</title>
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
 
-<meta
-  name="description"
-  content="Data analyst portfolio — SQL Server, Power BI, Python and end-to-end BI projects."
->
+  <title>
+    Mahmoud Hamdi — Data Analyst
+  </title>
 
-<link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+  <meta
+    name="description"
+    content="Data analyst portfolio — SQL Server, Power BI, Python and end-to-end BI projects."
+  >
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    rel="icon"
+    href="assets/images/favicon.svg"
+    type="image/svg+xml"
+  >
 
-<link
-  href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap"
-  rel="stylesheet"
->
+  <!-- Google Fonts -->
+  <link
+    rel="preconnect"
+    href="https://fonts.googleapis.com"
+  >
 
-<link rel="stylesheet" href="css/styles.css">
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  >
 
-<style>
-  /* Profile image only */
-  .hero__profile-img {
-    width: 155px !important;
-    height: 155px !important;
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap"
+    rel="stylesheet"
+  >
 
-    object-fit: cover !important;
-    object-position: center top !important;
+  <!-- Main CSS -->
+  <link
+    rel="stylesheet"
+    href="css/styles.css"
+  >
 
-    border-radius: 18px !important;
-    border: 5px solid #0b1f3a !important;
 
-    outline: 1px solid #284d7a !important;
-    outline-offset: 5px !important;
+  <!-- Custom Image Styles -->
+  <style>
 
-    background: #0b1f3a !important;
+    /* ==================================================
+       PROFILE IMAGE
+       Controls ONLY the personal profile image
+       ================================================== */
 
-    box-shadow:
-      10px 10px 0 #102a4c,
-      0 18px 40px rgba(11, 31, 58, 0.28) !important;
+    .hero__profile-img {
 
-    margin: 6px 0 32px 6px !important;
-    display: block !important;
-  }
-</style>
+      width: 155px !important;
+      height: 155px !important;
+
+      object-fit: cover !important;
+      object-position: center top !important;
+
+      border-radius: 18px !important;
+
+      border:
+        5px solid #0b1f3a !important;
+
+      outline:
+        1px solid #284d7a !important;
+
+      outline-offset:
+        5px !important;
+
+      background:
+        #0b1f3a !important;
+
+      box-shadow:
+        10px 10px 0 #102a4c,
+        0 18px 40px rgba(11, 31, 58, 0.28)
+        !important;
+
+      margin:
+        6px 0 32px 6px !important;
+
+      display:
+        block !important;
+
+    }
+
+
+    /* ==================================================
+       PROJECT IMAGES
+       Separate settings for project dashboard images
+       ================================================== */
+
+    .project-card__media img {
+
+      max-width:
+        100% !important;
+
+      max-height:
+        none !important;
+
+      width:
+        100% !important;
+
+      height:
+        100% !important;
+
+      object-fit:
+        cover !important;
+
+      border-radius:
+        0 !important;
+
+      margin:
+        0 !important;
+
+    }
+
+  </style>
 
 </head>
 
+
 <body>
 
-<nav class="nav">
-  <div class="container nav__inner">
 
-    <a href="#hero" class="nav__brand">
-      <strong>MH</strong> / Data Analyst
-    </a>
+  <!-- =========================
+       NAVIGATION
+       ========================= -->
 
-    <ul class="nav__links" id="navLinks">
-      <li><a href="#about" data-nav>About</a></li>
-      <li><a href="#skills" data-nav>Skills</a></li>
-      <li><a href="#projects" data-nav>Projects</a></li>
-      <li><a href="#certifications" data-nav>Certifications</a></li>
-      <li><a href="#contact" data-nav>Contact</a></li>
-    </ul>
+  <nav class="nav">
 
-    <button
-      class="nav__toggle"
-      id="navToggle"
-      aria-label="Toggle menu"
-      aria-expanded="false"
-      aria-controls="navLinks"
-    >
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
+    <div class="container nav__inner">
 
-  </div>
-</nav>
-
-
-<header class="hero bg-grid" id="hero">
-
-  <div class="container hero__grid">
-
-    <div>
-
-      <p class="hero__eyebrow">
-        SELECT * FROM analysts WHERE trust = true;
-      </p>
-
-      <img
-        src="assets/images/profile.jpg"
-        alt="Mahmoud Hamdi"
-        class="hero__profile-img"
-      >
-
-      <h1 id="heroName">
-        Mahmoud Hamdi
-      </h1>
-
-      <p class="hero__tagline" id="heroTagline">
-        "I don't just visualize data — I engineer the pipeline that makes it trustworthy."
-      </p>
-
-      <p class="hero__value" id="heroValue"></p>
-
-      <div class="btn-row">
-
-        <a
-          href="#projects"
-          class="btn btn--primary"
-        >
-          View Projects
-        </a>
-
-        <a
-          href="#"
-          id="downloadCvBtn"
-          class="btn btn--ghost"
-          download
-        >
-          Download CV
-        </a>
-
-      </div>
-
-    </div>
-
-
-    <div class="hero__card">
-
-      <div class="hero__card-label">
-
-        <span>
-          <span class="hero__card-dot"></span>
-          live_dashboard.pbix
-        </span>
-
-        <span id="heroLocation">
-          Egypt
-        </span>
-
-      </div>
-
-
-      <svg
-        class="hero__sparkline"
-        viewBox="0 0 300 70"
-        preserveAspectRatio="none"
-      >
-
-        <path
-          class="line"
-          d="M0,55 L40,45 L80,50 L120,25 L160,32 L200,12 L240,20 L300,5"
-        />
-
-      </svg>
-
-
-      <div
-        class="hero__stats"
-        id="heroStats"
-      ></div>
-
-    </div>
-
-  </div>
-
-</header>
-
-
-<main>
-
-
-<section id="about">
-
-  <div class="container">
-
-    <div class="section-head reveal">
-
-      <p class="eyebrow">
-        -- about
-      </p>
-
-      <h2>
-        What I actually do
-      </h2>
-
-    </div>
-
-
-    <div class="about__grid">
-
-      <div
-        class="about__text reveal"
-        id="aboutText"
-      ></div>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<section id="skills">
-
-  <div class="container">
-
-    <div class="section-head reveal">
-
-      <p class="eyebrow">
-        WHERE skill IN (toolkit)
-      </p>
-
-      <h2>
-        Skills &amp; tools
-      </h2>
-
-    </div>
-
-
-    <div
-      class="skills__grid"
-      id="skillsGrid"
-    ></div>
-
-  </div>
-
-</section>
-
-
-<section id="projects">
-
-  <div class="container">
-
-    <div class="section-head reveal">
-
-      <p class="eyebrow">
-        FROM projects ORDER BY impact DESC
-      </p>
-
-      <h2>
-        Featured projects
-      </h2>
-
-    </div>
-
-
-    <div
-      class="projects__list"
-      id="projectsList"
-    ></div>
-
-  </div>
-
-</section>
-
-
-<section id="certifications">
-
-  <div class="container">
-
-    <div class="section-head reveal">
-
-      <p class="eyebrow">
-        JOIN certifications ON verified = true
-      </p>
-
-      <h2>
-        Certifications
-      </h2>
-
-    </div>
-
-
-    <div
-      class="cert-table reveal"
-      id="certTable"
-    ></div>
-
-  </div>
-
-</section>
-
-
-<section
-  id="contact"
-  class="contact"
->
-
-  <div class="container reveal">
-
-    <h2 id="contactHeadline">
-      Have a data problem worth solving?
-    </h2>
-
-    <p id="contactSubtext">
-      I'm open to data analyst roles and freelance BI projects.
-    </p>
-
-
-    <div class="btn-row">
 
       <a
-        href="#"
-        id="contactEmailBtn"
-        class="btn btn--primary"
+        href="#hero"
+        class="nav__brand"
       >
-        Contact Me
+
+        <strong>
+          MH
+        </strong>
+
+        / Data Analyst
+
       </a>
 
+
+      <ul
+        class="nav__links"
+        id="navLinks"
+      >
+
+        <li>
+          <a href="#about" data-nav>
+            About
+          </a>
+        </li>
+
+        <li>
+          <a href="#skills" data-nav>
+            Skills
+          </a>
+        </li>
+
+        <li>
+          <a href="#projects" data-nav>
+            Projects
+          </a>
+        </li>
+
+        <li>
+          <a href="#certifications" data-nav>
+            Certifications
+          </a>
+        </li>
+
+        <li>
+          <a href="#contact" data-nav>
+            Contact
+          </a>
+        </li>
+
+      </ul>
+
+
+      <button
+        class="nav__toggle"
+        id="navToggle"
+        aria-label="Toggle menu"
+        aria-expanded="false"
+        aria-controls="navLinks"
+      >
+
+        <span></span>
+        <span></span>
+        <span></span>
+
+      </button>
+
+
+    </div>
+
+  </nav>
+
+
+
+  <!-- =========================
+       HERO SECTION
+       ========================= -->
+
+  <header
+    class="hero bg-grid"
+    id="hero"
+  >
+
+
+    <div
+      class="container hero__grid"
+    >
+
+
+      <!-- HERO LEFT SIDE -->
+
+      <div>
+
+
+        <p
+          class="hero__eyebrow"
+        >
+
+          SELECT * FROM analysts WHERE trust = true;
+
+        </p>
+
+
+
+        <!-- PROFILE IMAGE -->
+
+        <img
+          src="assets/images/profile.jpg"
+          alt="Mahmoud Hamdi"
+          class="hero__profile-img"
+        >
+
+
+
+        <h1
+          id="heroName"
+        >
+
+          Mahmoud Hamdi
+
+        </h1>
+
+
+
+        <p
+          class="hero__tagline"
+          id="heroTagline"
+        >
+
+          "I don't just visualize data — I engineer the pipeline that makes it trustworthy."
+
+        </p>
+
+
+
+        <p
+          class="hero__value"
+          id="heroValue"
+        ></p>
+
+
+
+        <div
+          class="btn-row"
+        >
+
+
+          <a
+            href="#projects"
+            class="btn btn--primary"
+          >
+
+            View Projects
+
+          </a>
+
+
+
+          <a
+            href="#"
+            id="downloadCvBtn"
+            class="btn btn--ghost"
+            download
+          >
+
+            Download CV
+
+          </a>
+
+
+        </div>
+
+
+      </div>
+
+
+
+      <!-- HERO RIGHT SIDE -->
+
+      <div
+        class="hero__card"
+      >
+
+
+        <div
+          class="hero__card-label"
+        >
+
+
+          <span>
+
+            <span
+              class="hero__card-dot"
+            ></span>
+
+            live_dashboard.pbix
+
+          </span>
+
+
+
+          <span
+            id="heroLocation"
+          >
+
+            Egypt
+
+          </span>
+
+
+        </div>
+
+
+
+        <svg
+          class="hero__sparkline"
+          viewBox="0 0 300 70"
+          preserveAspectRatio="none"
+        >
+
+
+          <path
+            class="line"
+            d="
+              M0,55
+              L40,45
+              L80,50
+              L120,25
+              L160,32
+              L200,12
+              L240,20
+              L300,5
+            "
+          />
+
+
+        </svg>
+
+
+
+        <div
+          class="hero__stats"
+          id="heroStats"
+        ></div>
+
+
+      </div>
+
+
+    </div>
+
+
+  </header>
+
+
+
+
+  <!-- =========================
+       MAIN CONTENT
+       ========================= -->
+
+  <main>
+
+
+
+    <!-- ABOUT -->
+
+    <section
+      id="about"
+    >
+
+
+      <div
+        class="container"
+      >
+
+
+        <div
+          class="section-head reveal"
+        >
+
+
+          <p
+            class="eyebrow"
+          >
+
+            -- about
+
+          </p>
+
+
+
+          <h2>
+
+            What I actually do
+
+          </h2>
+
+
+        </div>
+
+
+
+        <div
+          class="about__grid"
+        >
+
+
+          <div
+            class="about__text reveal"
+            id="aboutText"
+          ></div>
+
+
+        </div>
+
+
+      </div>
+
+
+    </section>
+
+
+
+
+
+    <!-- SKILLS -->
+
+    <section
+      id="skills"
+    >
+
+
+      <div
+        class="container"
+      >
+
+
+        <div
+          class="section-head reveal"
+        >
+
+
+          <p
+            class="eyebrow"
+          >
+
+            WHERE skill IN (toolkit)
+
+          </p>
+
+
+
+          <h2>
+
+            Skills &amp; tools
+
+          </h2>
+
+
+        </div>
+
+
+
+        <div
+          class="skills__grid"
+          id="skillsGrid"
+        ></div>
+
+
+      </div>
+
+
+    </section>
+
+
+
+
+
+    <!-- PROJECTS -->
+
+    <section
+      id="projects"
+    >
+
+
+      <div
+        class="container"
+      >
+
+
+        <div
+          class="section-head reveal"
+        >
+
+
+          <p
+            class="eyebrow"
+          >
+
+            FROM projects ORDER BY impact DESC
+
+          </p>
+
+
+
+          <h2>
+
+            Featured projects
+
+          </h2>
+
+
+        </div>
+
+
+
+        <div
+          class="projects__list"
+          id="projectsList"
+        ></div>
+
+
+      </div>
+
+
+    </section>
+
+
+
+
+
+    <!-- CERTIFICATIONS -->
+
+    <section
+      id="certifications"
+    >
+
+
+      <div
+        class="container"
+      >
+
+
+        <div
+          class="section-head reveal"
+        >
+
+
+          <p
+            class="eyebrow"
+          >
+
+            JOIN certifications ON verified = true
+
+          </p>
+
+
+
+          <h2>
+
+            Certifications
+
+          </h2>
+
+
+        </div>
+
+
+
+        <div
+          class="cert-table reveal"
+          id="certTable"
+        ></div>
+
+
+      </div>
+
+
+    </section>
+
+
+
+
+
+    <!-- CONTACT -->
+
+    <section
+      id="contact"
+      class="contact"
+    >
+
+
+      <div
+        class="container reveal"
+      >
+
+
+        <h2
+          id="contactHeadline"
+        >
+
+          Have a data problem worth solving?
+
+        </h2>
+
+
+
+        <p
+          id="contactSubtext"
+        >
+
+          I'm open to data analyst roles and freelance BI projects.
+
+        </p>
+
+
+
+        <div
+          class="btn-row"
+        >
+
+
+          <a
+            href="#"
+            id="contactEmailBtn"
+            class="btn btn--primary"
+          >
+
+            Contact Me
+
+          </a>
+
+
+
+          <a
+            href="#"
+            id="contactLinkedinBtn"
+            class="btn btn--ghost"
+            target="_blank"
+            rel="noopener"
+          >
+
+            LinkedIn
+
+          </a>
+
+
+
+          <a
+            href="#"
+            id="contactGithubBtn"
+            class="btn btn--ghost"
+            target="_blank"
+            rel="noopener"
+          >
+
+            GitHub
+
+          </a>
+
+
+        </div>
+
+
+      </div>
+
+
+    </section>
+
+
+  </main>
+
+
+
+
+  <!-- =========================
+       FOOTER
+       ========================= -->
+
+  <footer
+    class="footer container"
+  >
+
+
+    <span
+      id="footerName"
+    >
+
+      © Mahmoud Hamdi
+
+    </span>
+
+
+
+    <div
+      class="footer__socials"
+    >
+
+
       <a
         href="#"
-        id="contactLinkedinBtn"
-        class="btn btn--ghost"
+        id="footerEmail"
+      >
+
+        Email
+
+      </a>
+
+
+
+      <a
+        href="#"
+        id="footerLinkedin"
         target="_blank"
         rel="noopener"
       >
+
         LinkedIn
+
       </a>
+
+
 
       <a
         href="#"
-        id="contactGithubBtn"
-        class="btn btn--ghost"
+        id="footerGithub"
         target="_blank"
         rel="noopener"
       >
+
         GitHub
+
       </a>
+
 
     </div>
 
-  </div>
 
-</section>
-
-
-</main>
+  </footer>
 
 
-<footer class="footer container">
-
-  <span id="footerName">
-    © Mahmoud Hamdi
-  </span>
 
 
-  <div class="footer__socials">
+  <!-- =========================
+       JAVASCRIPT
+       ========================= -->
 
-    <a
-      href="#"
-      id="footerEmail"
-    >
-      Email
-    </a>
-
-    <a
-      href="#"
-      id="footerLinkedin"
-      target="_blank"
-      rel="noopener"
-    >
-      LinkedIn
-    </a>
-
-    <a
-      href="#"
-      id="footerGithub"
-      target="_blank"
-      rel="noopener"
-    >
-      GitHub
-    </a>
-
-  </div>
-
-</footer>
+  <script
+    src="js/config.js"
+  ></script>
 
 
-<script src="js/config.js"></script>
-<script src="js/main.js"></script>
+  <script
+    src="js/main.js"
+  ></script>
+
 
 </body>
+
 </html>
