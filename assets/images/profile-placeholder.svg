@@ -1,0 +1,19 @@
+<svg width="640" height="640" viewBox="0 0 640 640" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M 32 0 L 0 0 0 32" fill="none" stroke="#1E2A46" stroke-width="1"/>
+    </pattern>
+    <linearGradient id="fade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0A0F1C"/>
+      <stop offset="100%" stop-color="#121A2E"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="640" fill="url(#fade)"/>
+  <rect width="640" height="640" fill="url(#grid)"/>
+  <circle cx="320" cy="256" r="108" fill="none" stroke="#2FBF9F" stroke-width="2" opacity="0.55"/>
+  <path d="M320 256 m-84,0 a84,84 0 1,0 168,0 a84,84 0 1,0 -168,0" fill="#16233F"/>
+  <circle cx="320" cy="228" r="52" fill="#1B2A47" stroke="#E8A83A" stroke-width="2" opacity="0.85"/>
+  <path d="M204 452 Q320 340 436 452 L436 640 L204 640 Z" fill="#16233F" stroke="#2FBF9F" stroke-width="2" opacity="0.85"/>
+  <text x="320" y="580" font-family="'JetBrains Mono', monospace" font-size="15" fill="#5E6B85" text-anchor="middle" letter-spacing="2">REPLACE: profile-placeholder.svg</text>
+  <text x="320" y="606" font-family="'JetBrains Mono', monospace" font-size="13" fill="#3D4A66" text-anchor="middle" letter-spacing="1">recommended: 640x640, JPG or PNG</text>
+</svg>

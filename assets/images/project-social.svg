@@ -1,0 +1,29 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <pattern id="gridS" width="25" height="25" patternUnits="userSpaceOnUse">
+      <path d="M 25 0 L 0 0 0 25" fill="none" stroke="#233355" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="500" fill="#0F1B33"/>
+  <rect width="800" height="500" fill="url(#gridS)"/>
+  <rect x="48" y="48" width="704" height="150" rx="6" fill="#16233F" stroke="#2FBF9F" stroke-width="1.5"/>
+  <text x="70" y="82" font-family="'JetBrains Mono', monospace" font-size="13" fill="#8CA3C8" letter-spacing="1">POSTS ANALYZED — FB / IG / TIKTOK</text>
+  <text x="70" y="140" font-family="'Space Grotesk', sans-serif" font-size="46" fill="#2FBF9F" font-weight="600">4,768+</text>
+  <g stroke="#2C3A5C" stroke-width="1.5" fill="none">
+    <polyline points="470,170 520,140 570,155 620,110 670,125 720,90" stroke="#E8A83A" stroke-width="2.5"/>
+  </g>
+  <circle cx="720" cy="90" r="4" fill="#E8A83A"/>
+  <rect x="48" y="222" width="222" height="230" rx="6" fill="#16233F" stroke="#2C3A5C" stroke-width="1.5"/>
+  <text x="68" y="256" font-family="'JetBrains Mono', monospace" font-size="12" fill="#8CA3C8">FACEBOOK</text>
+  <circle cx="159" cy="345" r="60" fill="none" stroke="#2C3A5C" stroke-width="14"/>
+  <circle cx="159" cy="345" r="60" fill="none" stroke="#2FBF9F" stroke-width="14" stroke-dasharray="245 377" stroke-linecap="round" transform="rotate(-90 159 345)"/>
+  <rect x="289" y="222" width="222" height="230" rx="6" fill="#16233F" stroke="#2C3A5C" stroke-width="1.5"/>
+  <text x="309" y="256" font-family="'JetBrains Mono', monospace" font-size="12" fill="#8CA3C8">INSTAGRAM</text>
+  <circle cx="400" cy="345" r="60" fill="none" stroke="#2C3A5C" stroke-width="14"/>
+  <circle cx="400" cy="345" r="60" fill="none" stroke="#E8A83A" stroke-width="14" stroke-dasharray="170 377" stroke-linecap="round" transform="rotate(-90 400 345)"/>
+  <rect x="530" y="222" width="222" height="230" rx="6" fill="#16233F" stroke="#2C3A5C" stroke-width="1.5"/>
+  <text x="550" y="256" font-family="'JetBrains Mono', monospace" font-size="12" fill="#8CA3C8">TIKTOK</text>
+  <circle cx="641" cy="345" r="60" fill="none" stroke="#2C3A5C" stroke-width="14"/>
+  <circle cx="641" cy="345" r="60" fill="none" stroke="#2FBF9F" stroke-width="14" stroke-dasharray="130 377" stroke-linecap="round" transform="rotate(-90 641 345)"/>
+  <text x="400" y="480" font-family="'JetBrains Mono', monospace" font-size="12" fill="#4A5876" text-anchor="middle" letter-spacing="1">REPLACE: project-social.svg — recommended 800x500</text>
+</svg>

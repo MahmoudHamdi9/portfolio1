@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mahmoud Hamdi — Data Analyst</title>
+<meta name="description" content="Data analyst portfolio — SQL Server, Power BI, Python and end-to-end BI projects.">
+<link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- ============================= NAVIGATION ============================= -->
+<nav class="nav">
+  <div class="container nav__inner">
+    <a href="#hero" class="nav__brand"><strong>MH</strong> / Data Analyst</a>
+    <ul class="nav__links" id="navLinks">
+      <li><a href="#about" data-nav>About</a></li>
+      <li><a href="#skills" data-nav>Skills</a></li>
+      <li><a href="#projects" data-nav>Projects</a></li>
+      <li><a href="#certifications" data-nav>Certifications</a></li>
+      <li><a href="#contact" data-nav>Contact</a></li>
+    </ul>
+    <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ============================== HERO =================================== -->
+<header class="hero bg-grid" id="hero">
+  <div class="container hero__grid">
+    <div>
+      <p class="hero__eyebrow">SELECT * FROM analysts WHERE trust = true;</p>
+      <h1 id="heroName">Mahmoud Hamdi</h1>
+      <p class="hero__tagline" id="heroTagline">"I don't just visualize data — I engineer the pipeline that makes it trustworthy."</p>
+      <p class="hero__value" id="heroValue"></p>
+      <div class="btn-row">
+        <a href="#projects" class="btn btn--primary">View Projects</a>
+        <a href="#" id="downloadCvBtn" class="btn btn--ghost" download>Download CV</a>
+      </div>
+    </div>
+
+    <div class="hero__card">
+      <div class="hero__card-label">
+        <span><span class="hero__card-dot"></span>live_dashboard.pbix</span>
+        <span id="heroLocation">Egypt</span>
+      </div>
+      <svg class="hero__sparkline" viewBox="0 0 300 70" preserveAspectRatio="none">
+        <path class="line" d="M0,55 L40,45 L80,50 L120,25 L160,32 L200,12 L240,20 L300,5" />
+      </svg>
+      <div class="hero__stats" id="heroStats"></div>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- ============================== ABOUT ================================ -->
+  <section id="about">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">-- about</p>
+        <h2>What I actually do</h2>
+      </div>
+      <div class="about__grid">
+        <img class="about__portrait reveal" id="aboutImage" src="" alt="Portrait of Mahmoud Hamdi">
+        <div class="about__text reveal" id="aboutText"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== SKILLS ================================ -->
+  <section id="skills">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">WHERE skill IN (toolkit)</p>
+        <h2>Skills &amp; tools</h2>
+      </div>
+      <div class="skills__grid" id="skillsGrid"></div>
+    </div>
+  </section>
+
+  <!-- ============================== PROJECTS ============================== -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">FROM projects ORDER BY impact DESC</p>
+        <h2>Featured projects</h2>
+      </div>
+      <div class="projects__list" id="projectsList"></div>
+    </div>
+  </section>
+
+  <!-- ========================== CERTIFICATIONS ============================ -->
+  <section id="certifications">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">JOIN certifications ON verified = true</p>
+        <h2>Certifications</h2>
+      </div>
+      <div class="cert-table reveal" id="certTable"></div>
+    </div>
+  </section>
+
+  <!-- ============================== CONTACT ================================ -->
+  <section id="contact" class="contact">
+    <div class="container reveal">
+      <h2 id="contactHeadline">Have a data problem worth solving?</h2>
+      <p id="contactSubtext">I'm open to data analyst roles and freelance BI projects.</p>
+      <div class="btn-row">
+        <a href="#" id="contactEmailBtn" class="btn btn--primary">Contact Me</a>
+        <a href="#" id="contactLinkedinBtn" class="btn btn--ghost" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="#" id="contactGithubBtn" class="btn btn--ghost" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer container">
+  <span id="footerName">© Mahmoud Hamdi</span>
+  <div class="footer__socials">
+    <a href="#" id="footerEmail">Email</a>
+    <a href="#" id="footerLinkedin" target="_blank" rel="noopener">LinkedIn</a>
+    <a href="#" id="footerGithub" target="_blank" rel="noopener">GitHub</a>
+  </div>
+</footer>
+
+<script src="js/config.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+Put your CV/resume PDF in this folder.
+
+Recommended filename: Mahmoud-Hamdi-CV.pdf
+
+Then open js/config.js and set:
+  cvUrl: "assets/cv/Mahmoud-Hamdi-CV.pdf"
+
+Delete this text file once your real CV is in place (it is not linked from
+the site and is here only as a reminder).
