@@ -131,6 +131,16 @@ window.SITE_CONFIG = {
       githubUrl: "https://github.com/MahmoudHamdi9/Real-Estate-Performance-Analytics-2026-",
       demoUrl: "",
     },
+     {
+      title: "BMW Global Market Performance & Strategic Growth",
+      image: "assets/images/technical_performance_dashboard.png",
+      tools: ["Excel", "Power BI", "Advanced Charting", "Comparative Analysis", "Data Visualization"],
+      problem: "BMW's global market performance across models, regions, and fuel types lacked a unified strategic overview to identify pricing trends, market share dynamics, and performance gaps by segment.",
+      outcome: "Built a comprehensive technical performance dashboard analyzing average pricing by model, mileage trends, fuel type market share, and regional performance — uncovering key strategic insights for product and market positioning.",
+      metric: "$3.75B+ revenue mapped across 253M+ vehicles",
+      githubUrl: "https://github.com/MahmoudHamdi9/BMW-Market-Performance-Analysis",
+      demoUrl: "",
+    }
   ],
 
   // --------------------------------------------------------------------
